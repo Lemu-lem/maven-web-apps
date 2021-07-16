@@ -26,7 +26,7 @@ node{
   }
 
   stage('DeployTomcat') {
-    deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://34.239.155.145:7000/')], contextPath: null, war: 'target/*war'
+   deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://13.57.238.75:7000/')], contextPath: null, war: 'target/*war'
   }
   stage('emailDeployIssues') {
     emailext body: '''Thanks
