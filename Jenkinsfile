@@ -2,7 +2,7 @@
 //Groovy script 
 
 node{
-  def mavenHome = tool name: 'maven3.8.1'
+  #def mavenHome = tool name: 'maven3.8.1'
   stage('CodeClone') {
     git credentialsId: 'git-credentials', url: 'https://github.com/ttonka10/maven-web-apps.git'
   }
